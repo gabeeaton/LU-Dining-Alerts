@@ -5,8 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className="bg-cover bg-center h-screen bg-no-repeat">
+      <div className="bg-cover bg-center h-full bg-no-repeat">
         <div className="h-1/10 bg-liberty-navy flex flex-row items-center gap-5 p-5">
           <img className="h-14" src="./public/Liberty_Flames_logo.svg.png" />
           <h1 className="text-sm text-white font-bold sm:text-2xl"> LU Dining Alerts </h1>
@@ -18,13 +17,12 @@ function App() {
               className="border-2 border-gray-300 rounded-md p-3 w-72 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-liberty-red transition duration-200"
               placeholder="Enter your phone number"
             />
-            <button className="rounded-md bg-liberty-red h-12 w-36 text-center text-white font-semibold shadow-md hover:bg-liberty-red-dark hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-liberty-red transition duration-200">
-              <h1>Register</h1>
+            <button className="rounded-lg h-12 w-36 text-center text-white font-semibold shadow-md hover:bg-liberty-red-dark hover:brightness-110 bg-gradient-to-r from-liberty-red to-red-600 hover:from-liberty-red-dark hover:to-red-800 transition-all duration-300 ease-in-out">
+              <h1>Sign Up</h1>
             </button>
           </div>
         </div>
       </div>
-    </>
   )
 }
 
